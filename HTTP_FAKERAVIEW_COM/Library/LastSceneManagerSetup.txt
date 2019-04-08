@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/temp.unity
+=======
+- path: Assets/Scenes/temp.unity
+>>>>>>> 679d37fd71f0579933ab0e3176f51637e0bb2f69
   isLoaded: 1
   isActive: 1
