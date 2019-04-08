@@ -6,7 +6,14 @@ using UnityEngine;
 public class CardGenerator : MonoBehaviour
 {
     [SerializeField]
- //   GameObject card
+    GameObject cardFrame;//CardBaseをアタッチしてある、カードの枠、テキスト入力をまとめたオブジェクト
+
+    [SerializeField]
+    CardDataBase cardDataList; //カードのデータをまとめたデータベース
+
+    [SerializeField]
+    Sprite[] cardIcons;//カードのアイコンリスト
+
 
     // Start is called before the first frame update
     void Start()

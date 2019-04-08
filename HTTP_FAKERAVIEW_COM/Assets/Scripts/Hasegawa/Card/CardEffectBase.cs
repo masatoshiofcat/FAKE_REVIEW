@@ -8,5 +8,5 @@ public abstract class CardEffectBase : ScriptableObject
     /// <summary>
     /// カードの効果を記述する
     /// </summary>
-    public abstract void Effect();
+    public abstract void CardBoughtCallBack();
 }
