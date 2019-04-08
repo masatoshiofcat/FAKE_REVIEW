@@ -1,18 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestCardEffect : MonoBehaviour
+public class TestCardEffect : CardEffectBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void CardBoughtCallBack()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 }

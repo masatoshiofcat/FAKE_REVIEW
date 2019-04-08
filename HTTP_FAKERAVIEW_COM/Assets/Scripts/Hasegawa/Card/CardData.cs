@@ -10,16 +10,24 @@ public class CardData : ScriptableObject
     //カードの種類。主にこれによってイラストが変わる
     public enum KindOfCard
     {
-        BOOK,
-        DISC, //CDやDVDがこれにあたる
-        HOBBY //主に玩具
+        BOOK,         // 本
+        DISC,         // CDやDVDがこれにあたる
+        HOBBY,        // 主に玩具
+        Game,         // ゲーム
+        STATIONERY,   // 文房具
+        OTHER,        // その他
     }
 
     //カードのタグ。
     public enum TagOfCard
     {
-        NARD, //オタク
-        YOUNG, //若者
+        NARD,          // オタク
+        YOUNG,         // 若者
+        GIRL,          // 女児
+        BOY,           // 男児
+        READER,        // 読書家
+        STUDENT,       // 受験生
+
     }
 
     [SerializeField]
