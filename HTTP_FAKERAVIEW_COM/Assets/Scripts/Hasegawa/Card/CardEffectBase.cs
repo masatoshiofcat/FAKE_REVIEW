@@ -3,10 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CardEffectBase : ScriptableObject
+[System.Serializable]
+public class CardEffectBase : MonoBehaviour
 {
-    /// <summary>
-    /// カードの効果を記述する
-    /// </summary>
-    public abstract void Effect();
+
 }
