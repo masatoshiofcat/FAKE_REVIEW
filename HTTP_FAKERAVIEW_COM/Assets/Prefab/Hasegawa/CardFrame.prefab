@@ -308,7 +308,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 288d7fe3efc5dc246bfe58b6c168d085, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -363,6 +363,9 @@ MonoBehaviour:
   maxStockText: {fileID: 5812295970260386612}
   currentStockText: {fileID: 1812928858721719010}
   cardIcon: {fileID: 3211643168382417364}
+  fadeUpText: {fileID: 986029585776403241, guid: a3fd7b75cbba7014a95690c772f8f5f7,
+    type: 3}
+  selectedColor: {r: 0, g: 0.19907331, b: 1, a: 1}
 --- !u!1 &8991336632992777786
 GameObject:
   m_ObjectHideFlags: 0

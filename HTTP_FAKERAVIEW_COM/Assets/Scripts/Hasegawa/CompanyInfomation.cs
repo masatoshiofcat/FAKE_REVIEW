@@ -84,6 +84,8 @@ public class CompanyInfomation : SingletonMonoBehaviour<CompanyInfomation>
         {
             this.cardsOnWindow[i].EndOfTheDay();
         }
+        //レビュー☆の回復
+        this.currentStar += this.currentConfidence;
         //日にちの経過
         this.dayElapsed++;
         this.dayLeft--;

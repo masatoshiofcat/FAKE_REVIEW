@@ -63,7 +63,13 @@ public class CardBase : MonoBehaviour
             //重なっているときクリックされたら選択中の切り替え
             if(Input.GetMouseButtonDown(0))
             {
-                SwitchChosenCard();
+                if(hitData.collider.gameObject == gameObject)
+                {
+                    Debug.Log("hit=" + gameObject.name);
+
+                    SwitchChosenCard();
+                }
+
             }
         }
 
@@ -245,11 +251,11 @@ public class CardBase : MonoBehaviour
     }
 
     /// <summary>
-    /// 評価した時sellInADayの減少量の設定
+    /// 評価した時sellInADayの減少量の取得
     /// </summary>
     /// <param name="val"></param>
     /// <returns></returns>
-    public float GetAmountOfDecrease(float val)
+    public float GetAmountOfDecrease()
     {
         return this.amountOfDecrease;
     }

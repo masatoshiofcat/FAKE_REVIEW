@@ -23,10 +23,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 913, y: 448}
-  m_MaxSize: {x: 22008, y: 10000}
+  m_MinSize: {x: 917, y: 448}
+  m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 8837
+  controlID: 11137
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -75,7 +75,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 8838
+  controlID: 11117
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,9 +191,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.862493, y: -0.67323375, z: -1.0105814}
+    m_Target: {x: -0.22564633, y: -7.4669523, z: -0.44433594}
     speed: 2
-    m_Value: {x: -4.862493, y: -0.67323375, z: -1.0105814}
+    m_Value: {x: -0.22564633, y: -7.4669523, z: -0.44433594}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -225,9 +225,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.5853536
+    m_Target: 5.0282564
     speed: 2
-    m_Value: 3.5853536
+    m_Value: 5.0282564
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -389,9 +389,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e63f0000
-      m_LastClickedID: 16358
-      m_ExpandedIDs: 00b2ffff0eb4ffff24b4ffff26b4ffff7cb4ffff92b4ffffccb5ffff82c6ffff60dcffff80dcfffffaeaffff28ebfffff4f6ffffd6fbfffff60b0000fc0b00002c0c0000042f00003a2f00008e3f0000dc3f0000e63f0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: a4a9ffff00b2ffff0eb4ffff24b4ffff26b4ffff7cb4ffff92b4ffffccb5ffff82c6ffff60dcffff80dcfffffaeaffff28ebfffff4f6ffffd6fbfffff60b0000fc0b00002c0c0000042f00003a2f00008e3f0000dc3f0000e63f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -479,19 +479,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts/Hasegawa
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts/Hasegawa
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\s172162\Documents\GitClones\FAKE_RAVIEW\HTTP_FAKERAVIEW_COM
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 66090000
-    m_LastClickedID: 2406
+    m_SelectedIDs: 700a0000
+    m_LastClickedID: 2672
     m_ExpandedIDs: 00000000660900009c090000b6090000440a0000700a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -545,8 +545,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: e63f0000
-    m_LastClickedInstanceID: 16358
+    m_SelectedInstanceIDs: a2a9ffff
+    m_LastClickedInstanceID: -22110
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: b2cafcff4ebbf8ff787ffeffb0340000e8290000
     m_RenameOverlay:
