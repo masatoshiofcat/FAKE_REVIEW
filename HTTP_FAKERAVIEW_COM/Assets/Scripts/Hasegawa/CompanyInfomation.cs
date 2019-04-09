@@ -171,6 +171,15 @@ public class CompanyInfomation : SingletonMonoBehaviour<CompanyInfomation>
     }
 
     /// <summary>
+    /// 現在選択中カードの設定
+    /// </summary>
+    /// <param name="card"></param>
+    public void SetChosenCard(CardBase card)
+    {
+        this.currentChosenCard = card;
+    }
+
+    /// <summary>
     /// 信頼度の取得
     /// </summary>
     /// <returns></returns>

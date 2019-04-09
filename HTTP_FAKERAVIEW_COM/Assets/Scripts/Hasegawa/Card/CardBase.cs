@@ -27,13 +27,15 @@ public class CardBase : MonoBehaviour
     [SerializeField]
     private Text fadeUpText;//+n と上昇していく、売れた個数を表すテキスト
 
+    [SerializeField]
+    private Color selectedColor;//選択中の色
+
     private UnityEngine.Events.UnityEvent boughtEvent;//商品が買われたときの効果を記述したクラス
 
     private int currentStock;//現在までに売れた個数
     private int maxStock;//在庫数
 
     private bool isSelected=false;//このカードが選択中かのフラグ
-
 
     private float sellInADay;//一日当たり売れる量
     private float sellInATemp;//sellInADayの余剰分を記録しておく
@@ -54,12 +56,43 @@ public class CardBase : MonoBehaviour
     {
         //マウスと接触しているかの判定
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hitData = new RaycastHit();
-        if (Physics.Raycast(ray, out hitData, 100f))
+        RaycastHit2D hitData = Physics2D.Raycast(ray.origin, ray.direction, 100f);
+
+        if (hitData)
         {
-            //選択中の切り替え
+            //重なっているときクリックされたら選択中の切り替え
+            if(Input.GetMouseButtonDown(0))
+            {
+                SwitchChosenCard();
+            }
         }
 
+
+        //選択中であれば色を変える
+        if(this.isSelected)
+        {
+            GetComponent<SpriteRenderer>().color = selectedColor;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = new Color(1,1,1,1);
+        }
+    }
+
+    /// <summary>
+    /// 選択中カードの切り替え
+    /// </summary>
+    private void SwitchChosenCard()
+    {
+        CardBase[] cardList =CompanyInfomation.Instance.GetCardListOnWindow();
+        //一度すべてのカードを非選択状態に
+        for (int i=0;i<cardList.Length;i++)
+        {
+            cardList[i].SetIsChosen(false);
+        }
+        //自分のカードを選択中に。
+        this.SetIsChosen(true);
+        CompanyInfomation.Instance.SetChosenCard(gameObject.GetComponent<CardBase>());
 
     }
 
@@ -220,6 +253,47 @@ public class CardBase : MonoBehaviour
     {
         return this.amountOfDecrease;
     }
+
+    /// <summary>
+    /// カードが選択中かを取得する
+    /// </summary>
+    public bool GetIsChosen()
+    {
+        return this.isSelected;
+    }
+
+    /// <summary>
+    /// カードが選択中かを選択する
+    /// </summary>
+    /// <param name="flag"></param>
+    public void SetIsChosen(bool flag)
+    {
+        this.isSelected = flag;
+    }
+
+    public void SetStock(int val)
+    {
+        this.maxStock = val;
+    }
+
+    /// <summary>
+    /// 商品の在庫数を取得する
+    /// </summary>
+    /// <returns></returns>
+    public int GetMaxStock()
+    {
+        return this.maxStock;
+    }
+
+    /// <summary>
+    /// 現在売れた数を取得する
+    /// </summary>
+    /// <returns></returns>
+    public int GetCurrentStock()
+    {
+        return this.currentStock;
+    }
+
 
     /// <summary>
     /// カードが売れたときの処理

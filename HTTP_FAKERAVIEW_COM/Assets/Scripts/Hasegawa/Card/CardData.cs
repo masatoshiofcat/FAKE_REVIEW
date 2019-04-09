@@ -104,6 +104,8 @@ public class CardData : ScriptableObject
         return this.stock;
     }
 
+
+
     /// <summary>
     /// マウスが上に乗った時表示される文字列の取得
     /// </summary>
