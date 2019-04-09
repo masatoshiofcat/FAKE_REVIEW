@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/temp.unity
-=======
-- path: Assets/temp.unity
->>>>>>> HIDE
+- path: Assets/Scenes/TakezawaTest.unity
   isLoaded: 1
   isActive: 1

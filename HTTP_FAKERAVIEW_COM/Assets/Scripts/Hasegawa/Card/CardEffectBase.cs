@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CardEffectBase : ScriptableObject
+public abstract class CardEffectBase : MonoBehaviour
 {
     /// <summary>
     /// カードの効果を記述する
