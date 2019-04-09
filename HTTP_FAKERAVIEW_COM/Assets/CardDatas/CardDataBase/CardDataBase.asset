@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1e6bd5c68999d428e885635a157a95, type: 3}
   m_Name: CardDataBase
   m_EditorClassIdentifier: 
-  cardDataList: []
+  cardDataList:
+  - {fileID: 11400000, guid: b843083aae41fb342a6206e7d50dfe0c, type: 2}

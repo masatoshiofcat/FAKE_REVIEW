@@ -32,7 +32,7 @@ public class CardData : ScriptableObject
     private TagOfCard[] cardTag;//商品についているタグ
 
     [SerializeField]
-    private CardEffectBase cardEffect;//カードの効果
+    private UnityEngine.Events.UnityEvent boughtEvents = new UnityEngine.Events.UnityEvent();
 
     [SerializeField]
     private string cardEffectText;//カードに書かれる、効果の説明
@@ -43,6 +43,12 @@ public class CardData : ScriptableObject
     [SerializeField]
     private string mouseOverText;//マウスが上に乗った時表示されるヒント
 
+    [SerializeField]
+    private float firstSellInADay;//一日当たり売れる量の初期値
+    [SerializeField]
+    private float firstAmountOfIncrease = 1.02f;//評価した時sellInADay増加量の初期値
+    [SerializeField]
+    private float firstAmountOfDecrease = 0.98f;//評価した時sellInADay減少量の初期値
 
 
     /// <summary>
@@ -76,9 +82,9 @@ public class CardData : ScriptableObject
     /// カードの効果スクリプトの取得
     /// </summary>
     /// <returns></returns>
-    public CardEffectBase GetCardEffect()
+    public UnityEngine.Events.UnityEvent GetCardEffect()
     {
-        return this.cardEffect;
+        return this.boughtEvents;
     }
 
     /// <summary>
@@ -105,4 +111,38 @@ public class CardData : ScriptableObject
     {
         return this.mouseOverText;
     }
+
+    /// <summary>
+    /// 一日当たり売れる量の初期値を返す
+    /// </summary>
+    /// <returns></returns>
+    public float GetFirstSellInADay()
+    {
+        return this.firstSellInADay;
+    }
+
+    /// <summary>
+    /// //評価した時sellInADay増加量の初期値
+    /// </summary>
+    /// <returns></returns>
+    public float GetFirstAmountOfIncrease()
+    {
+        return this.firstAmountOfIncrease;
+    }
+
+    /// <summary>
+    /// 評価した時sellInADay減少量の初期値
+    /// </summary>
+    public float GetFirstAmountOfDecrease()
+    {
+        return this.firstAmountOfDecrease;
+    }
+
+    public void Func()
+    {
+        Debug.Log("うれました");
+
+    }
+
+
 }

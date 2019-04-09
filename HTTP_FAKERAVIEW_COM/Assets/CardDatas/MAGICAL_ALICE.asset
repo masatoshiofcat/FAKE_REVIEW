@@ -13,9 +13,25 @@ MonoBehaviour:
   m_Name: MAGICAL_ALICE
   m_EditorClassIdentifier: 
   kind: 0
-  cardName: 
-  cardTag: 
-  cardEffect: {fileID: 0}
-  cardEffectText: 
-  stock: 0
-  mouseOverText: 
+  cardName: "\u9B54\u6CD5\u5C11\u5973\u30A2\u30EA\u30B9"
+  cardTag: 00000000
+  boughtEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 2c39bbce3c960264ba5310cea37973b7, type: 2}
+        m_MethodName: Func
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  cardEffectText: "\u5229\u76CA\u304C1\u5897\u3048\u307E\u3059\u3002"
+  stock: 1000
+  mouseOverText: "\u30D5\u30A3\u30AF\u30B7\u30E7\u30F3\u3067\u3059\u3002"
+  FirstSellInADay: 1
